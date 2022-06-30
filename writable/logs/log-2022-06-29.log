@@ -1,0 +1,34 @@
+CRITICAL - 2022-06-29 10:07:52 --> syntax error, unexpected '}', expecting ';' or ','
+in APPPATH\Controllers\Camisetas.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Camisetas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Camisetas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Camisetas')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Camisetas')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Camisetas', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-29 11:39:34 --> unlink(../public/uploads/camiseta-88.jpg): No such file or directory
+in APPPATH\Controllers\Camisetas.php on line 51.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/camiseta-88.jpg): No such file or directory', 'APPPATH\\Controllers\\Camisetas.php', 51, [...])
+ 2 APPPATH\Controllers\Camisetas.php(51): unlink('../public/uploads/camiseta-88.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->borrar('4')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-29 11:39:43 --> unlink(../public/uploads/camiseta-88.jpg): No such file or directory
+in APPPATH\Controllers\Camisetas.php on line 51.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/camiseta-88.jpg): No such file or directory', 'APPPATH\\Controllers\\Camisetas.php', 51, [...])
+ 2 APPPATH\Controllers\Camisetas.php(51): unlink('../public/uploads/camiseta-88.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->borrar('4')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-29 11:39:46 --> unlink(../public/uploads/camiseta-2001.jpg): No such file or directory
+in APPPATH\Controllers\Camisetas.php on line 51.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(../public/uploads/camiseta-2001.jpg): No such file or directory', 'APPPATH\\Controllers\\Camisetas.php', 51, [...])
+ 2 APPPATH\Controllers\Camisetas.php(51): unlink('../public/uploads/camiseta-2001.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->borrar('3')
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
