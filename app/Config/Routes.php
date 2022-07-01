@@ -58,3 +58,4 @@ $routes->get('crear', 'Camisetas::crear');
 $routes->post('guardar', 'Camisetas::guardar');
 $routes->get('borrar/(:num)', 'Camisetas::borrar/$1');
 $routes->get('editar/(:num)', 'Camisetas::editar/$1');
+$routes->post('actualizar', 'Camisetas::actualizar');

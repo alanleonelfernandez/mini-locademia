@@ -10,7 +10,7 @@
         <div class="card-body">
             <h5 class="card-title">Ingresar datos de camiseta</h5>
             <p class="card-text">
-                <form method="post" action="<?=site_url('/guardar')?>" enctype="multipart/form-data">
+                <form method="post" action="<?=site_url('/actualizar')?>" enctype="multipart/form-data">
 
                     <input type="hidden" name="id" value="<?=$camiseta['id']?>">
                     <div class="form-group">
@@ -27,7 +27,8 @@
                         
                         <input id="imagen" class="form-control-file" type="file" name="imagen">
                     </div>
-                    <button class="btn btn-success" type="submit">Guardar</button>
+                    <button class="btn btn-success" type="submit">Actualizar</button>
+                    <a href="<?=base_url('listar');?>" class="btn btn-info">Cancelar</a>
                         
                 </form>
             </p>

@@ -1,0 +1,116 @@
+CRITICAL - 2022-06-30 21:40:18 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+in APPPATH\Controllers\Camisetas.php on line 102.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Camisetas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Camisetas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Camisetas')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Camisetas')
+ 5 SYSTEMPATH\CodeIgniter.php(846): class_exists('\\App\\Controllers\\Camisetas', true)
+ 6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 21:48:24 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Camisetas.php(99): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->actualizar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 21:49:38 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1576.
+ 1 SYSTEMPATH\BaseModel.php(1576): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(692): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Camisetas.php(99): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->actualizar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:05:47 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'a', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:06:41 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'a', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:06:52 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'a', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:11:45 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'a', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:12:34 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Alan', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:17:42 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'alan', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(31): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:24:20 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Camisetas.php(49): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\uploads', '1656645860_f9e3800e313596c37bb6')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:27:16 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Camisetas.php(49): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\uploads', '1656646036_918e76747155fec9a970')
+ 3 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->guardar()
+ 4 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 5 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-06-30 22:36:28 --> require is not a valid rule.
+in SYSTEMPATH\Validation\Validation.php on line 314.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('require')
+ 2 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('nombre', 'nombre', 'Camiseta Homenaje 2001', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Camisetas.php(94): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\Camisetas->actualizar()
+ 6 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Camisetas))
+ 7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()

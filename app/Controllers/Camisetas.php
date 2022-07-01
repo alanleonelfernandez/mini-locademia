@@ -26,7 +26,24 @@ class Camisetas extends Controller{
     }
     public function guardar(){
         $camiseta= new Camiseta();
-        $nombre= $this->request->getVar('nombre');
+
+        /*$validacion= $this->validate([
+            'nombre'=>'require|min_length[3]',
+            'imagen' =>[
+                'uploaded[imagen]',
+                'mime_in[imagen,image/jpg,image/jpeg,image/png]',
+                'max_size[imagen,1024]',
+            ]
+        ]);
+        if(!$validacion){
+
+            $session= session();
+            $session->setFlashdata('mensaje','Revise la informacion');
+
+            return redirect()->back()->withInput();
+            //return $this->response->redirect(site_url('/listar'));
+        }*/
+
         if($imagen=$this->request->getFile('imagen')){
             $nuevoNombre= $imagen->getRandomName();
             $imagen->move('../public/uploads/',$nuevoNombre);
@@ -65,5 +82,52 @@ class Camisetas extends Controller{
 
         return view('camisetas/editar', $datos);
     }
+    public function actualizar(){
 
+        $camiseta= new Camiseta();
+        $datos=[
+            'nombre'=>$this->request->getVar('nombre')
+        ];
+        $id= $this->request->getVar('id');
+
+            $validacion= $this->validate([
+            'nombre'=>'require|min_length[3]',
+        ]);
+        if(!$validacion){
+
+            $session= session();
+            $session->setFlashdata('mensaje','Revise la informacion');
+
+            return redirect()->back()->withInput();
+        }
+
+        $camiseta->update($id, $datos);
+
+        $validacion= $this->validate([
+            'imagen' =>[
+                'uploaded[imagen]',
+                'mime_in[imagen,image/jpg,image/jpeg,image/png]',
+                'max_size[imagen,1024]',
+            ]
+        ]);
+
+        if($validacion){
+            if($imagen=$this->request->getFile('imagen')){
+
+                $datosCamiseta=$camiseta->where('id',$id)->first();
+
+                $ruta=('../public/uploads/' .$datosCamiseta['imagen']);
+                unlink($ruta);
+
+                $nuevoNombre= $imagen->getRandomName();
+                $imagen->move('../public/uploads/',$nuevoNombre);
+
+                $datos=['imagen'=>$nuevoNombre];
+                $camiseta->update($datos);
+            }
+        }
+
+        return $this->response->redirect(site_url('/listar'));
+
+    }
 }
